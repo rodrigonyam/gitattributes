@@ -1,243 +1,341 @@
+# ============================================================================
 # .gitattributes - GitHub Linguist Configuration
-# This file controls how GitHub's Linguist categorizes files and calculates language statistics
-# Rules are applied from top to bottom, with later rules taking precedence
+# ============================================================================
+#
+# This file controls how GitHub's Linguist categorizes files and calculates 
+# language statistics for your repository.
+#
+# Rules are applied from top to bottom, with later rules taking precedence.
+# 
+# Key Attributes:
+#   linguist-detectable=true/false  - Include/exclude from language stats
+#   linguist-documentation=true     - Mark as documentation (excluded)
+#   linguist-generated=true         - Mark as generated code (excluded)
+#   linguist-vendored=true          - Mark as third-party code (excluded)
+#   linguist-language=Language      - Force specific language classification
+#
+# ============================================================================
 
-# ================================
-# Language-Specific Rules
-# ================================
+# ============================================================================
+# 🌐 FRONTEND LANGUAGES
+# ============================================================================
 
-# HTML Files
-*.html linguist-detectable=true
-*.htm linguist-detectable=true
-*.xhtml linguist-detectable=true
+# HTML Files - Web markup language
+*.html                  linguist-detectable=true
+*.htm                   linguist-detectable=true
+*.xhtml                 linguist-detectable=true
 
-# CSS Files
-*.css linguist-detectable=true
-*.scss linguist-detectable=true
-*.sass linguist-detectable=true
-*.less linguist-detectable=true
+# CSS Files - Stylesheets and preprocessors
+*.css                   linguist-detectable=true
+*.scss                  linguist-detectable=true
+*.sass                  linguist-detectable=true
+*.less                  linguist-detectable=true
 
-# JavaScript Files
-*.js linguist-detectable=true
-*.mjs linguist-detectable=true
-*.jsx linguist-detectable=true
+# JavaScript Files - Client-side scripting
+*.js                    linguist-detectable=true
+*.mjs                   linguist-detectable=true
+*.jsx                   linguist-detectable=true
 
-# TypeScript Files
-*.ts linguist-detectable=true
-*.tsx linguist-detectable=true
+# TypeScript Files - Typed JavaScript
+*.ts                    linguist-detectable=true
+*.tsx                   linguist-detectable=true
 
-# C# Files
-*.cs linguist-detectable=true
-*.csx linguist-detectable=true
-*.cake linguist-detectable=true
+# ============================================================================
+# 🖥️ BACKEND LANGUAGES
+# ============================================================================
 
-# Python Files
-*.py linguist-detectable=true
-*.pyx linguist-detectable=true
-*.pyw linguist-detectable=true
+# C# Files - Microsoft .NET platform
+*.cs                    linguist-detectable=true
+*.csx                   linguist-detectable=true
+*.cake                  linguist-detectable=true
 
-# Java Files
-*.java linguist-detectable=true
-*.jar linguist-detectable=false
-*.class linguist-detectable=false
+# Python Files - General-purpose programming
+*.py                    linguist-detectable=true
+*.pyx                   linguist-detectable=true
+*.pyw                   linguist-detectable=true
 
-# C/C++ Files
-*.c linguist-detectable=true
-*.cpp linguist-detectable=true
-*.cxx linguist-detectable=true
-*.cc linguist-detectable=true
-*.h linguist-detectable=true
-*.hpp linguist-detectable=true
-*.hxx linguist-detectable=true
+# Java Files - Enterprise application development
+*.java                  linguist-detectable=true
+*.jar                   linguist-detectable=false    # Compiled archives
+*.class                 linguist-detectable=false    # Compiled bytecode
 
-# Go Files
-*.go linguist-detectable=true
+# C/C++ Files - Systems programming
+*.c                     linguist-detectable=true
+*.cpp                   linguist-detectable=true
+*.cxx                   linguist-detectable=true
+*.cc                    linguist-detectable=true
+*.h                     linguist-detectable=true
+*.hpp                   linguist-detectable=true
+*.hxx                   linguist-detectable=true
 
-# Rust Files
-*.rs linguist-detectable=true
+# Go Files - Google's systems language
+*.go                    linguist-detectable=true
 
-# PHP Files
-*.php linguist-detectable=true
-*.php3 linguist-detectable=true
-*.php4 linguist-detectable=true
-*.php5 linguist-detectable=true
-*.phtml linguist-detectable=true
+# Rust Files - Systems programming with memory safety
+*.rs                    linguist-detectable=true
 
-# Ruby Files
-*.rb linguist-detectable=true
-*.rake linguist-detectable=true
-*.gemspec linguist-detectable=true
+# PHP Files - Server-side web development
+*.php                   linguist-detectable=true
+*.php3                  linguist-detectable=true
+*.php4                  linguist-detectable=true
+*.php5                  linguist-detectable=true
+*.phtml                 linguist-detectable=true
 
-# Node.js Backend Files
-*.mjs linguist-detectable=true
-server.js linguist-detectable=true
-app.js linguist-detectable=true
+# Ruby Files - Dynamic programming language
+*.rb                    linguist-detectable=true
+*.rake                  linguist-detectable=true
+*.gemspec               linguist-detectable=true
 
-# Kotlin Files
-*.kt linguist-detectable=true
-*.kts linguist-detectable=true
+# Node.js Backend Files - Server-side JavaScript
+server.js               linguist-detectable=true
+app.js                  linguist-detectable=true
 
-# Scala Files
-*.scala linguist-detectable=true
-*.sc linguist-detectable=true
+# Kotlin Files - JVM language by JetBrains
+*.kt                    linguist-detectable=true
+*.kts                   linguist-detectable=true     # Kotlin scripts
 
-# Swift Files
-*.swift linguist-detectable=true
+# Scala Files - Functional/OOP hybrid for JVM
+*.scala                 linguist-detectable=true
+*.sc                    linguist-detectable=true
 
-# Dart Files
-*.dart linguist-detectable=true
+# Swift Files - Apple's modern programming language
+*.swift                 linguist-detectable=true
 
-# Elixir Files
-*.ex linguist-detectable=true
-*.exs linguist-detectable=true
+# Dart Files - Google's client-optimized language
+*.dart                  linguist-detectable=true
 
-# Erlang Files
-*.erl linguist-detectable=true
-*.hrl linguist-detectable=true
+# Elixir Files - Dynamic functional language
+*.ex                    linguist-detectable=true
+*.exs                   linguist-detectable=true     # Elixir scripts
 
-# Haskell Files
-*.hs linguist-detectable=true
-*.lhs linguist-detectable=true
+# Erlang Files - Fault-tolerant functional language
+*.erl                   linguist-detectable=true
+*.hrl                   linguist-detectable=true     # Erlang headers
 
-# F# Files
-*.fs linguist-detectable=true
-*.fsx linguist-detectable=true
-*.fsi linguist-detectable=true
+# Haskell Files - Pure functional programming
+*.hs                    linguist-detectable=true
+*.lhs                   linguist-detectable=true     # Literate Haskell
 
-# Visual Basic Files
-*.vb linguist-detectable=true
-*.vbs linguist-detectable=true
+# F# Files - Functional-first .NET language
+*.fs                    linguist-detectable=true
+*.fsx                   linguist-detectable=true     # F# scripts
+*.fsi                   linguist-detectable=true     # F# signatures
 
-# ================================
-# Files to Exclude from Language Statistics
-# ================================
+# Visual Basic Files - Microsoft's legacy language
+*.vb                    linguist-detectable=true
+*.vbs                   linguist-detectable=true     # VB scripts
 
-# Vendored/Third-party Code
-vendor/** linguist-vendored=true
-vendors/** linguist-vendored=true
-third-party/** linguist-vendored=true
-node_modules/** linguist-vendored=true
-packages/** linguist-vendored=true
+# ============================================================================
+# 🚫 EXCLUDED FROM LANGUAGE STATISTICS
+# ============================================================================
 
-# Documentation
-*.md linguist-documentation=true
-*.markdown linguist-documentation=true
-*.txt linguist-documentation=true
-docs/** linguist-documentation=true
-documentation/** linguist-documentation=true
-README* linguist-documentation=true
-CHANGELOG* linguist-documentation=true
-LICENSE* linguist-documentation=true
+# ----------------------------------------------------------------------------
+# 📦 Vendored/Third-party Code
+# ----------------------------------------------------------------------------
+# These directories typically contain external dependencies and libraries
+# that shouldn't count toward your project's language statistics
 
-# Generated Files
-*.min.js linguist-generated=true
-*.min.css linguist-generated=true
-dist/** linguist-generated=true
-build/** linguist-generated=true
-out/** linguist-generated=true
-target/** linguist-generated=true
-bin/** linguist-generated=true
-obj/** linguist-generated=true
-*.designer.cs linguist-generated=true
+vendor/**                      linguist-vendored=true
+vendors/**                     linguist-vendored=true
+third-party/**                 linguist-vendored=true
+node_modules/**                linguist-vendored=true
+packages/**                    linguist-vendored=true
 
-# Backend-specific Generated/Build Files
-*.class linguist-generated=true
-*.jar linguist-generated=true
-*.war linguist-generated=true
-*.ear linguist-generated=true
-*.exe linguist-generated=true
-*.dll linguist-generated=true
-*.so linguist-generated=true
-*.dylib linguist-generated=true
-*.a linguist-generated=true
-*.lib linguist-generated=true
-*.o linguist-generated=true
-*.obj linguist-generated=true
-gradle/wrapper/** linguist-generated=true
-gradlew linguist-generated=true
-gradlew.bat linguist-generated=true
-mvnw linguist-generated=true
-mvnw.cmd linguist-generated=true
-_build/** linguist-generated=true
-deps/** linguist-generated=true
-.mix/** linguist-generated=true
+# ----------------------------------------------------------------------------
+# 📚 Documentation Files
+# ----------------------------------------------------------------------------
+# Documentation files that provide information but aren't source code
 
-# Configuration Files
-*.json linguist-detectable=false
-*.xml linguist-detectable=false
-*.yml linguist-detectable=false
-*.yaml linguist-detectable=false
-*.toml linguist-detectable=false
-*.ini linguist-detectable=false
-*.config linguist-detectable=false
-*.properties linguist-detectable=false
+*.md                           linguist-documentation=true
+*.markdown                     linguist-documentation=true
+*.txt                          linguist-documentation=true
+docs/**                        linguist-documentation=true
+documentation/**               linguist-documentation=true
+README*                        linguist-documentation=true
+CHANGELOG*                     linguist-documentation=true
+LICENSE*                       linguist-documentation=true
 
-# Backend Configuration Files
-pom.xml linguist-detectable=false
-build.gradle linguist-detectable=false
-build.gradle.kts linguist-detectable=false
-settings.gradle linguist-detectable=false
-gradle.properties linguist-detectable=false
-Cargo.toml linguist-detectable=false
-Cargo.lock linguist-generated=true
-go.mod linguist-detectable=false
-go.sum linguist-generated=true
-composer.json linguist-detectable=false
-Gemfile linguist-detectable=false
-Gemfile.lock linguist-generated=true
-requirements.txt linguist-detectable=false
-setup.py linguist-detectable=false
-pyproject.toml linguist-detectable=false
-mix.exs linguist-detectable=false
-mix.lock linguist-generated=true
-*.csproj linguist-detectable=false
-*.vbproj linguist-detectable=false
-*.fsproj linguist-detectable=false
-*.sln linguist-detectable=false
-packages.config linguist-detectable=false
+# ----------------------------------------------------------------------------
+# 🔧 Generated Files & Build Artifacts
+# ----------------------------------------------------------------------------
+# Files created by build processes, compilers, or automated tools
 
-# Database and Migration Files
-*.sql linguist-detectable=false
-migrations/** linguist-detectable=false
+# Frontend Build Outputs
+*.min.js                       linguist-generated=true
+*.min.css                      linguist-generated=true
+dist/**                        linguist-generated=true
+build/**                       linguist-generated=true
+out/**                         linguist-generated=true
 
-# Test Files (optional - uncomment if you want to exclude tests)
-# test/** linguist-detectable=false
-# tests/** linguist-detectable=false
-# spec/** linguist-detectable=false
-# __tests__/** linguist-detectable=false
-# *.test.js linguist-detectable=false
-# *.spec.js linguist-detectable=false
-# *.test.ts linguist-detectable=false
-# *.spec.ts linguist-detectable=false
-# *.test.py linguist-detectable=false
-# *.spec.py linguist-detectable=false
-# *.test.cs linguist-detectable=false
-# *.spec.cs linguist-detectable=false
+# General Build Directories
+target/**                      linguist-generated=true    # Maven/Rust
+bin/**                         linguist-generated=true    # General binaries
+obj/**                         linguist-generated=true    # .NET objects
 
-# ================================
-# Additional File Type Overrides
-# ================================
+# .NET Generated Files
+*.designer.cs                  linguist-generated=true
 
-# Force specific file extensions to be detected as certain languages
-*.razor linguist-language=HTML
-*.cshtml linguist-language=HTML
-*.vbhtml linguist-language=HTML
+# Backend Build Artifacts
+*.class                        linguist-generated=true    # Java bytecode
+*.jar                          linguist-generated=true    # Java archives
+*.war                          linguist-generated=true    # Web archives
+*.ear                          linguist-generated=true    # Enterprise archives
 
-# Assets and Media
-*.png linguist-detectable=false
-*.jpg linguist-detectable=false
-*.jpeg linguist-detectable=false
-*.gif linguist-detectable=false
-*.svg linguist-detectable=false
-*.ico linguist-detectable=false
-*.woff linguist-detectable=false
-*.woff2 linguist-detectable=false
-*.ttf linguist-detectable=false
-*.eot linguist-detectable=false
+# Compiled Binaries
+*.exe                          linguist-generated=true    # Windows executables
+*.dll                          linguist-generated=true    # Windows libraries
+*.so                           linguist-generated=true    # Linux shared objects
+*.dylib                        linguist-generated=true    # macOS dynamic libraries
+*.a                            linguist-generated=true    # Static libraries
+*.lib                          linguist-generated=true    # Windows libraries
+*.o                            linguist-generated=true    # Object files
+*.obj                          linguist-generated=true    # Windows object files
 
-# Lock files and package managers
-package-lock.json linguist-generated=true
-yarn.lock linguist-generated=true
-composer.lock linguist-generated=true
-Pipfile.lock linguist-generated=true
-poetry.lock linguist-generated=true
+# Build Tool Wrappers
+gradle/wrapper/**              linguist-generated=true
+gradlew                        linguist-generated=true
+gradlew.bat                    linguist-generated=true
+mvnw                           linguist-generated=true
+mvnw.cmd                       linguist-generated=true
+
+# Language-Specific Build Directories
+_build/**                      linguist-generated=true    # Elixir
+deps/**                        linguist-generated=true    # Elixir dependencies
+.mix/**                        linguist-generated=true    # Elixir mix
+
+# ----------------------------------------------------------------------------
+# ⚙️ Configuration Files
+# ----------------------------------------------------------------------------
+# Configuration files that define project settings but aren't source code
+
+# Generic Configuration Formats
+*.json                         linguist-detectable=false
+*.xml                          linguist-detectable=false
+*.yml                          linguist-detectable=false
+*.yaml                         linguist-detectable=false
+*.toml                         linguist-detectable=false
+*.ini                          linguist-detectable=false
+*.config                       linguist-detectable=false
+*.properties                   linguist-detectable=false
+
+# Java/JVM Build Configuration
+pom.xml                        linguist-detectable=false    # Maven
+build.gradle                   linguist-detectable=false    # Gradle
+build.gradle.kts               linguist-detectable=false    # Gradle Kotlin DSL
+settings.gradle                linguist-detectable=false    # Gradle settings
+gradle.properties              linguist-detectable=false    # Gradle properties
+
+# Rust Configuration
+Cargo.toml                     linguist-detectable=false    # Cargo manifest
+Cargo.lock                     linguist-generated=true      # Dependency lock
+
+# Go Configuration
+go.mod                         linguist-detectable=false    # Go modules
+go.sum                         linguist-generated=true      # Dependency checksums
+
+# PHP Configuration
+composer.json                  linguist-detectable=false    # Composer manifest
+composer.lock                  linguist-generated=true      # Composer lock
+
+# Ruby Configuration
+Gemfile                        linguist-detectable=false    # Bundler manifest
+Gemfile.lock                   linguist-generated=true      # Bundler lock
+
+# Python Configuration
+requirements.txt               linguist-detectable=false    # Pip requirements
+setup.py                       linguist-detectable=false    # Python setup
+pyproject.toml                 linguist-detectable=false    # Python project config
+Pipfile                        linguist-detectable=false    # Pipenv manifest
+Pipfile.lock                   linguist-generated=true      # Pipenv lock
+poetry.lock                    linguist-generated=true      # Poetry lock
+
+# Elixir Configuration
+mix.exs                        linguist-detectable=false    # Mix project
+mix.lock                       linguist-generated=true      # Mix dependencies
+
+# .NET Project Files
+*.csproj                       linguist-detectable=false    # C# project
+*.vbproj                       linguist-detectable=false    # VB.NET project
+*.fsproj                       linguist-detectable=false    # F# project
+*.sln                          linguist-detectable=false    # Solution file
+packages.config                linguist-detectable=false    # NuGet packages
+
+# ----------------------------------------------------------------------------
+# 🗄️ Database & Migration Files
+# ----------------------------------------------------------------------------
+*.sql                          linguist-detectable=false
+migrations/**                  linguist-detectable=false
+
+# ----------------------------------------------------------------------------
+# 🧪 Test Files (Optional Exclusion)
+# ----------------------------------------------------------------------------
+# Uncomment the lines below to exclude test files from language statistics
+
+# Test Directories
+# test/**                      linguist-detectable=false
+# tests/**                     linguist-detectable=false
+# spec/**                      linguist-detectable=false
+# __tests__/**                 linguist-detectable=false
+
+# JavaScript/TypeScript Test Files
+# *.test.js                    linguist-detectable=false
+# *.spec.js                    linguist-detectable=false
+# *.test.ts                    linguist-detectable=false
+# *.spec.ts                    linguist-detectable=false
+
+# Python Test Files
+# *.test.py                    linguist-detectable=false
+# *.spec.py                    linguist-detectable=false
+# test_*.py                    linguist-detectable=false
+
+# C# Test Files
+# *.test.cs                    linguist-detectable=false
+# *.spec.cs                    linguist-detectable=false
+
+# ============================================================================
+# 🔄 LANGUAGE OVERRIDES & SPECIAL CASES
+# ============================================================================
+
+# ----------------------------------------------------------------------------
+# 🏷️ Force Language Classification
+# ----------------------------------------------------------------------------
+# Override Linguist's automatic detection for specific file types
+
+*.razor                        linguist-language=HTML       # Blazor components
+*.cshtml                       linguist-language=HTML       # ASP.NET Razor views
+*.vbhtml                       linguist-language=HTML       # VB.NET Razor views
+
+# ----------------------------------------------------------------------------
+# 🎨 Assets & Media Files
+# ----------------------------------------------------------------------------
+# Binary assets and media files that shouldn't count as code
+
+# Images
+*.png                          linguist-detectable=false
+*.jpg                          linguist-detectable=false
+*.jpeg                         linguist-detectable=false
+*.gif                          linguist-detectable=false
+*.svg                          linguist-detectable=false
+*.ico                          linguist-detectable=false
+*.webp                         linguist-detectable=false
+*.bmp                          linguist-detectable=false
+
+# Fonts
+*.woff                         linguist-detectable=false
+*.woff2                        linguist-detectable=false
+*.ttf                          linguist-detectable=false
+*.eot                          linguist-detectable=false
+*.otf                          linguist-detectable=false
+
+# ----------------------------------------------------------------------------
+# 🔒 Package Manager Lock Files
+# ----------------------------------------------------------------------------
+# Auto-generated dependency resolution files
+
+package-lock.json              linguist-generated=true      # npm
+yarn.lock                      linguist-generated=true      # Yarn
+pnpm-lock.yaml                 linguist-generated=true      # pnpm
+
+# ============================================================================
+# END OF CONFIGURATION
+# ============================================================================
